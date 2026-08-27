@@ -1,8 +1,8 @@
 /* src/components/FxUI/Brand/FxBrandLogo.js | Renders a brand's logo — text wordmark or SVG image | Sree | 2026-08-27 */
+
 import Image from "next/image";
 import { cn } from "@/lib/FxUtils";
 import { FX_WORDMARK } from "@/lib/FxTheme";
-
 /* - - - - - - - - - - - - - - - - */
 
 export function FxBrandLogo({ brand, as: Tag = "h1", className }) {
@@ -15,5 +15,4 @@ export function FxBrandLogo({ brand, as: Tag = "h1", className }) {
     );
   return <Tag className={cn(FX_WORDMARK.text, "m-0", className)}>{logo.text}</Tag>;
 }
-
 /* - - - - - - - - - - - - - - - - */

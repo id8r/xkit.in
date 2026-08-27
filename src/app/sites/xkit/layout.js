@@ -1,7 +1,7 @@
 /* src/app/sites/xkit/layout.js | xkit.in — metadata, Philosopher font, brand token scope | Sree | 2026-08-27 */
+
 import localFont from "next/font/local";
 import { getBrand, getBrandUrl } from "@/lib/FxBrands";
-
 /* - - - - - - - - - - - - - - - - */
 
 const BRAND = getBrand("xkit");
@@ -29,5 +29,4 @@ export default function XkitLayout({ children }) {
     </div>
   );
 }
-
 /* - - - - - - - - - - - - - - - - */

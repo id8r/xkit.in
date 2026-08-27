@@ -1,8 +1,8 @@
 /* src/proxy.js | Host → brand routing: rewrites / to /sites/<brand>/ per domain | Sree | 2026-08-27 */
+
 import { NextResponse } from "next/server";
 import { getBrandByHost, toBrandPath } from "@/lib/FxBrands";
 import { SITES_PREFIX } from "@/lib/FxConstants";
-
 /* - - - - - - - - - - - - - - - - */
 
 export function proxy(request) {
@@ -23,5 +23,4 @@ export function proxy(request) {
 export const config = {
   matcher: ["/((?!_next|brands|api|.*\\..*).*)"],
 };
-
 /* - - - - - - - - - - - - - - - - */

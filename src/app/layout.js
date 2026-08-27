@@ -1,6 +1,6 @@
 /* src/app/layout.js | Root shell — html/body only; brands own metadata, fonts and tokens | Sree | 2026-08-27 */
-import "./globals.css";
 
+import "./globals.css";
 /* - - - - - - - - - - - - - - - - */
 
 export default function RootLayout({ children }) {
@@ -10,5 +10,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
 /* - - - - - - - - - - - - - - - - */

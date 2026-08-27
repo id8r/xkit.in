@@ -1,6 +1,6 @@
 /* src/lib/FxBrands.js | Brand resolution helpers — host → brand, id → brand | Sree | 2026-08-27 */
-import { BRANDS, DEFAULT_BRAND_ID, SITES_PREFIX } from "@/lib/FxConstants";
 
+import { BRANDS, DEFAULT_BRAND_ID, SITES_PREFIX } from "@/lib/FxConstants";
 /* - - - - - - - - - - - - - - - - */
 
 export const BRAND_LIST = Object.values(BRANDS);
@@ -31,5 +31,4 @@ export function toBrandPath(brand, pathname) {
 export function getBrandUrl(brand) {
   return `https://${brand.domain}`;
 }
-
 /* - - - - - - - - - - - - - - - - */

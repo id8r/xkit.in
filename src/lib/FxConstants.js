@@ -42,5 +42,4 @@ export const BRANDS = {
     mark: "/brands/fxque/mark.svg",
   },
 };
-
 /* - - - - - - - - - - - - - - - - */

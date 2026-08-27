@@ -1,7 +1,7 @@
 /* src/app/sites/fxque/layout.js | fxque.com — metadata, Urbanist font, brand token scope | Sree | 2026-08-27 */
+
 import { Urbanist } from "next/font/google";
 import { getBrand, getBrandUrl } from "@/lib/FxBrands";
-
 /* - - - - - - - - - - - - - - - - */
 
 const BRAND = getBrand("fxque");
@@ -24,5 +24,4 @@ export default function FxqueLayout({ children }) {
     </div>
   );
 }
-
 /* - - - - - - - - - - - - - - - - */

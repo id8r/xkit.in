@@ -22,5 +22,4 @@ export const FX_LAYOUT = {
 export const FX_SPACING = {
   wordmarkToTagline: "mb-5",
 };
-
 /* - - - - - - - - - - - - - - - - */
