@@ -32,7 +32,9 @@ There is no separate product prefix in this repo; the "product layer" is the per
 
 ## Current brands
 
-| id | domain | logo | font |
-| :--- | :--- | :--- | :--- |
-| `xkit` | xkit.in | text `xkit` | Philosopher 400 (self-hosted, `src/fonts/`, OFL) |
-| `fxque` | fxque.com | text `FxQue` | Urbanist 500 (Google, via next/font) |
+| id | domain | logo | font | mark / favicon |
+| :--- | :--- | :--- | :--- | :--- |
+| `xkit` | xkit.in | text `xkit` | Philosopher 400 (self-hosted, `src/fonts/`, OFL) | X mark (`public/brands/xkit/mark.svg`) |
+| `fxque` | fxque.com | text `FxQue` | Urbanist 500 (Google, via next/font) | Urbanist `Q` glyph on indigo tile (`public/brands/fxque/mark.svg`; `glyph.svg` = bare outline, `currentColor`) |
+
+Marks are real outlines (glyph paths extracted with fontTools), not `<text>` — favicons render without the font installed. Each brand's `src/app/sites/<id>/icon.svg` is a copy of its `mark.svg`.
