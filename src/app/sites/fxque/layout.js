@@ -1,12 +1,13 @@
-/* src/app/sites/fxque/layout.js | fxque.com — metadata, Inter font, brand token scope | Sree | 2026-08-27 */
-import { Inter } from "next/font/google";
+/* src/app/sites/fxque/layout.js | fxque.com — metadata, Urbanist font, brand token scope | Sree | 2026-08-27 */
+import { Urbanist } from "next/font/google";
 import { getBrand, getBrandUrl } from "@/lib/FxBrands";
 
 /* - - - - - - - - - - - - - - - - */
 
 const BRAND = getBrand("fxque");
 
-const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" });
+/* Wordmark font — Urbanist 500 (runner-up: Outfit 500). */
+const urbanist = Urbanist({ subsets: ["latin"], weight: "500", display: "swap", variable: "--font-urbanist" });
 
 export const metadata = {
   metadataBase: new URL(getBrandUrl(BRAND)),
@@ -18,7 +19,7 @@ export const metadata = {
 
 export default function FxqueLayout({ children }) {
   return (
-    <div data-brand={BRAND.id} className={inter.variable}>
+    <div data-brand={BRAND.id} className={urbanist.variable}>
       {children}
     </div>
   );

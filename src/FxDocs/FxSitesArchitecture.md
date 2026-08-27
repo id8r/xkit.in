@@ -35,4 +35,4 @@ There is no separate product prefix in this repo; the "product layer" is the per
 | id | domain | logo | font |
 | :--- | :--- | :--- | :--- |
 | `xkit` | xkit.in | text `xkit` | Philosopher 400 (self-hosted, `src/fonts/`, OFL) |
-| `fxque` | fxque.com | text `FxQue` (placeholder) | Inter (placeholder) |
+| `fxque` | fxque.com | text `FxQue` | Urbanist 500 (Google, via next/font) |
